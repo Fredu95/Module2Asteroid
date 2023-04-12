@@ -20,13 +20,14 @@ public class bulletBill : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1") && shotTime <= 0)
+        if (Input.GetButtonDown("Fire1") && shotTime <= 0)
         {
             GameObject newbullet = Instantiate(bullet, shotPosition.position, transform.rotation);
             Rigidbody2D rb = newbullet.GetComponent<Rigidbody2D>();
             rb.AddForce(transform.up * shotForce);
             Destroy(newbullet, lifeTime);
             shotTime=shotPeriod;
+            Debug.Log("Fire!!");
         }
         shotTime -= Time.deltaTime;
      

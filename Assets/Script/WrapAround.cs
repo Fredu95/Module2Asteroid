@@ -5,8 +5,8 @@ using UnityEngine;
 public class WrapAround : MonoBehaviour
 {
     
-   float halfScreenWidth = 17f;
-   float halfScreenHeight = 10f;
+   float halfScreenWidth = 14f;
+   float halfScreenHeight = 8f;
 
    
     void Update()
