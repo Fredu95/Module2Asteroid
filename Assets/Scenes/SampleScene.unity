@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565bc577743262b48a965c400549499d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 2000
+  thrust: 200
 --- !u!50 &372004598
 Rigidbody2D:
   serializedVersion: 4
@@ -5086,7 +5086,7 @@ MonoBehaviour:
   shotPosition: {fileID: 297268720}
   shotForce: 1000
   lifeTime: 2
-  shotPeriod: 1
+  shotPeriod: 0.1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
