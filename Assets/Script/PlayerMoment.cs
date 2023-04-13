@@ -46,6 +46,7 @@ if (Input.GetButton("Jump"))
 
 void OnCollisionEnter2D(Collision2D other)
 {
+ UIcontrol.instance.UpdateScore(-10);
  Debug.Log("coli");   
 }
 

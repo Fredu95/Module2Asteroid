@@ -122,7 +122,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -166,11 +166,11 @@ MonoBehaviour:
   pos2: {fileID: 3967688854217808381}
   pos3: {fileID: 1213438286829715889}
   tinyAsteroid: {fileID: 6928450979513508648, guid: 759aba4b9f789a442a965852b2e37496, type: 3}
-  hp: 1
-  hurtPeriod: 0
-  bulletPushForce: 0
-  initTorque: 0.2
-  initForce: 0.2
+  hp: 8
+  hurtPeriod: 1
+  bulletPushForce: 1
+  initTorque: 100
+  initForce: 200
 --- !u!1 &1583730582112256029
 GameObject:
   m_ObjectHideFlags: 0

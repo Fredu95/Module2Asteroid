@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3039140615674106375}
   - component: {fileID: 3695685277287432859}
   - component: {fileID: 2422225454576325855}
+  - component: {fileID: 4116817186784160684}
   m_Layer: 0
   m_Name: Asteroid1
   m_TagString: asteroid
@@ -146,3 +147,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315c80c6ad78bc5449bf1629a3df97c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4116817186784160684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928450979513508648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1883a58c02599404c8213d70416d2cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos1: {fileID: 0}
+  pos2: {fileID: 0}
+  pos3: {fileID: 0}
+  tinyAsteroid: {fileID: 0}
+  hp: 4
+  hurtPeriod: 0
+  bulletPushForce: 2
+  initTorque: 1
+  initForce: 1

@@ -47,6 +47,7 @@ public class Asteroid : MonoBehaviour
             if (hp == 0)
             {
                 Destroy(gameObject);
+                UIcontrol.instance.UpdateScore(100);
                 if (pos1 != null)
                 {
                     Instantiate(tinyAsteroid, pos1.position, transform.rotation);
