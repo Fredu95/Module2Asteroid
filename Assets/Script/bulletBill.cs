@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bulletBill : MonoBehaviour
 {
-    AudioSource NovaShot;
+    [SerializeField] AudioSource NovaShot;
     [SerializeField] GameObject bullet;
     [SerializeField] Transform shotPosition;
     [SerializeField] float shotForce;
@@ -21,15 +21,15 @@ public class bulletBill : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && shotTime <= 0)
+        if (Input.GetButton("Fire1") && shotTime <= 0)
         {
-            
+            NovaShot.Play();
             GameObject newbullet = Instantiate(bullet, shotPosition.position, transform.rotation);
             Rigidbody2D rb = newbullet.GetComponent<Rigidbody2D>();
             rb.AddForce(transform.up * shotForce);
             Destroy(newbullet, lifeTime);
             shotTime=shotPeriod;
-            NovaShot.Play();
+            
         }
         shotTime -= Time.deltaTime;
      

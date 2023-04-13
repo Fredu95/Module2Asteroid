@@ -6,9 +6,8 @@ public class PlayerMoment : MonoBehaviour
 {   
     Rigidbody2D rb;
     ParticleSystem particles;
-    [SerializeField]
-    float thrust = 20;
-    
+    [SerializeField] float thrust = 20;
+    [SerializeField]float speed = 450;
    
     // Start is called before the first frame update
     void Start()
@@ -37,7 +36,7 @@ if (Input.GetButton("Jump"))
         }
 
     float xInput= Input.GetAxis("Horizontal");
-    float speed = 50;
+    
 
     gameObject.transform.Rotate(new Vector3(0f, 0f, -xInput * Time.deltaTime * speed)); //Kaantyy paikallaan
 
