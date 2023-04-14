@@ -8,6 +8,8 @@ public class PlayerMoment : MonoBehaviour
     ParticleSystem particles;
     [SerializeField] float thrust = 20;
     [SerializeField]float speed = 450;
+    [SerializeField] int hp;
+    [SerializeField] GameObject startlocation;
    
     // Start is called before the first frame update
     void Start()
@@ -40,6 +42,7 @@ if (Input.GetButton("Jump"))
 
     gameObject.transform.Rotate(new Vector3(0f, 0f, -xInput * Time.deltaTime * speed)); //Kaantyy paikallaan
 
+
     }
 
 
@@ -47,6 +50,15 @@ void OnCollisionEnter2D(Collision2D other)
 {
  UIcontrol.instance.UpdateScore(-10);
  Debug.Log("coli");   
+ if (other.gameObject.tag == "asteroid")
+ {
+    hp -=1;
+    if (hp ==0)
+    {
+        Instantiate(startlocation, new Vector3(0,0,0), transform.rotation);
+        Destroy(gameObject);
+    }
+ }
 }
 
 }

@@ -166,5 +166,5 @@ MonoBehaviour:
   hp: 4
   hurtPeriod: 0
   bulletPushForce: 2
-  initTorque: 1
-  initForce: 1
+  initTorque: 100
+  initForce: 200
