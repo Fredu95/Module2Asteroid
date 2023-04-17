@@ -157,9 +157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565bc577743262b48a965c400549499d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 200
+  thrust: 300
   speed: 350
-  hp: 3
+  hp: 4
   startlocation: {fileID: 7841572500064857655, guid: a16d58982f26c3848ad393902c854c5c, type: 3}
 --- !u!198 &2358916261782117250
 ParticleSystem:

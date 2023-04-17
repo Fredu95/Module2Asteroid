@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMoment : MonoBehaviour
 {   
@@ -48,15 +49,17 @@ if (Input.GetButton("Jump"))
 
 void OnCollisionEnter2D(Collision2D other)
 {
- UIcontrol.instance.UpdateScore(-10);
+
  Debug.Log("coli");   
  if (other.gameObject.tag == "asteroid")
  {
+     UIcontrol.instance.UpdateLives(-1);
     hp -=1;
     if (hp ==0)
     {
         Instantiate(startlocation, new Vector3(0,0,0), transform.rotation);
         Destroy(gameObject);
+          SceneManager.LoadScene("startCreen");
     }
  }
 }

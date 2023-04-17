@@ -163,7 +163,7 @@ MonoBehaviour:
   pos2: {fileID: 0}
   pos3: {fileID: 0}
   tinyAsteroid: {fileID: 0}
-  hp: 4
+  hp: 2
   hurtPeriod: 0
   bulletPushForce: 2
   initTorque: 100

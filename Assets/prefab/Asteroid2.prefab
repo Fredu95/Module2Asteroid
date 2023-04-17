@@ -166,7 +166,7 @@ MonoBehaviour:
   pos2: {fileID: 3967688854217808381}
   pos3: {fileID: 1213438286829715889}
   tinyAsteroid: {fileID: 6928450979513508648, guid: 759aba4b9f789a442a965852b2e37496, type: 3}
-  hp: 8
+  hp: 3
   hurtPeriod: 1
   bulletPushForce: 1
   initTorque: 100
